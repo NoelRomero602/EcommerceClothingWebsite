@@ -1,0 +1,4 @@
+angular-clothing/*.tiff filter=lfs diff=lfs merge=lfs -text
+angular-clothing/ filter=lfs diff=lfs merge=lfs -text
+Angular-Clothing/ filter=lfs diff=lfs merge=lfs -text
+Angular-CLothing/ filter=lfs diff=lfs merge=lfs -text
