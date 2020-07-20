@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ClothingProductService } from 'src/app/services/clothing-product.service';
 import { ClothingProduct } from 'src/app/common/clothing-product';
-import { Observable, Subscription } from 'rxjs';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-clothing-list',
@@ -12,7 +12,7 @@ export class ClothingListComponent implements OnInit {
 
   constructor(private clothingService: ClothingProductService) { }
   clothing_products: ClothingProduct[];
-  testv:Subscription;
+  
   ngOnInit(): void 
   {
     this.listClothingProducts();
