@@ -27,7 +27,7 @@ CREATE TABLE `Clothing_Article` (
 --
 
 INSERT INTO `Clothing_Article` VALUES 
-	(1,'blue v-neck',14.99,'assets/images/products/placeholder.png'),
-    (2,'black v-neck',14.99,'assets/images/products/placeholder.png'),
-    (3,'red v-neck',14.99,'assets/images/products/placeholder.png'),
-	(4,'orange v-neck',14.99,'assets/images/products/placeholder.png');
+	(1,'blue v-neck',13.99,'assets/images/products/placeholder.png'),
+    (2,'black v-neck',13.99,'assets/images/products/placeholder.png'),
+    (3,'red v-neck',13.99,'assets/images/products/placeholder.png'),
+	(4,'orange v-neck',13.99,'assets/images/products/placeholder.png');
