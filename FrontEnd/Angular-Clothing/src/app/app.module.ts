@@ -1,10 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { ClothingListComponent } from './components/clothing-list/clothing-list.component';
 import { ClothingProductService } from './services/clothing-product.service';
+
 import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -15,6 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     HttpClientModule
   ],
+
   providers: [ClothingProductService],
   bootstrap: [AppComponent]
 })

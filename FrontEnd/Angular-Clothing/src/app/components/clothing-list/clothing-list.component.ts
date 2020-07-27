@@ -28,4 +28,6 @@ export class ClothingListComponent implements OnInit {
     )
   }
 
+
 }
+
