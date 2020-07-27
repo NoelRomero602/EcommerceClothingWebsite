@@ -14,4 +14,6 @@ export class ClothingProductService {
   {
     return this.http.get<ClothingProduct[]>(this.baseURL);
   }
+
 }
+

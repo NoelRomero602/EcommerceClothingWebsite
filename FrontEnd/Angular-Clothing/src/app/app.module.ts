@@ -5,6 +5,9 @@ import { AppComponent } from './app.component';
 import { ClothingListComponent } from './components/clothing-list/clothing-list.component';
 import { ClothingProductService } from './services/clothing-product.service';
 
+import { HttpClientModule } from '@angular/common/http';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +17,8 @@ import { ClothingProductService } from './services/clothing-product.service';
     BrowserModule,
     HttpClientModule
   ],
-  providers: [ClothingProductService], // so we can inject
+
+  providers: [ClothingProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

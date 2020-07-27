@@ -1,6 +1,8 @@
 export class ClothingProduct {
-    description:string;
-    category:string;
-   
+
+    price:string;
+    name:string;
+    image:string;
+
 
 }

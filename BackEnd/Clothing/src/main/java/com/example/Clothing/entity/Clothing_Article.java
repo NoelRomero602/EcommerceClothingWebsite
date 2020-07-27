@@ -4,7 +4,6 @@ import javax.persistence.*;
 
 @Entity // shows this is an object class and we want this as our table class
 @Table(name="Clothing_Article")
-
 public class Clothing_Article
 {
 
@@ -13,12 +12,14 @@ public class Clothing_Article
    @Column(name="id")
     private int id;
 
-    @Column(name="category")
-    private String category;
+    @Column(name="name")
+    private String name;
 
-    @Column(name="description")
-    private String description;
+    @Column(name="price")
+    private String price;
 
+    @Column(name="image")
+    private String image;
 
 
  public void setId(int id) {
@@ -27,24 +28,25 @@ public class Clothing_Article
  public int getId() {
   return id;
  }
- public void setCategory(String catagory) {
-  this.category = catagory;
+ public void setName(String name) {
+  this.name = name;
+ }
+ public void setImage(String img){this.image=img; }
+ public String getImage(){return image;}
+ public String getName() {
+  return name;
  }
 
- public String getCategory() {
-  return category;
- }
-
- public String getDescription() {
-  return description;
+ public String getPrice() {
+  return price;
  }
 
 
 public Clothing_Article(){} // id is primary key so we dont include it
- public Clothing_Article(String category, String description) {
-  this.description = description;
-  this.category = category;
-
+ public Clothing_Article(String name, String price,String img) {
+  this.price = price;
+  this.name = name;
+  this.image = img;
  }
 
 }
